@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Welcome Screen -->
+    <div id="welcome-screen">
+        <div class="welcome-content">
+            <h1 class="welcome-text">Welcome to My Portfolio</h1>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="mobile-toggle" aria-label="Toggle menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="container">
+            <div class="home-content">
+                <img src="profile.jpg" alt="Profile Picture" class="profile-img" id="profile-img">
+                <p class="title">Full Stack Developer</p>
+                <p class="tagline">3rd Year BSIT Student at STI Fairview College</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/notlike.rey/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/Not.likeRey/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://github.com/Daoang" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+                <div class="scroll-indicator">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+               <img src="about-pic.jpg" alt="About Picture" class="about-img">
+                <div class="about-text">
+                <p>Hello! I am a 3rd year BSIT student at STI Fairview College. I am also a photographer for the Bytes organization.</p>
+                <p>I have experience in both frontend and backend development. I specialize in building inventory systems that help real businesses work better.</p>
+                <p>Through my school projects, I have learned many programming languages. My goal is to create systems that are efficient and easy to use.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-java"></i>
+                    <h3>Java</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-code"></i>
+                    <h3>C#</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="95"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="88"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-php"></i>
+                    <h3>PHP</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="82"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-cog"></i>
+                    <h3>Rust</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="75"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>MySQL</h3>
+                    <div class="progress-bar">
+                        <div class="progress" data-progress="85"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Sales and Inventory System for Sari-Sari Store</h3>
+                        <p>A comprehensive point-of-sale and inventory management system designed specifically for small sari-sari stores to track sales and manage stock efficiently.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>MartEase Sales and Inventory</h3>
+                        <p>An integrated sales and inventory management solution for retail businesses, featuring real-time stock tracking and sales analytics.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3>Computerized Sales and Inventory Management for Galaxy Manufacturing and Supply</h3>
+                        <p>A complete enterprise-level inventory and sales management system built for Galaxy Manufacturing and Supply to streamline operations and improve business efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">My Contact</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-envelope"></i> johnreydaoang1@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +63 9456109784</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 106 Block 4 Ext, Taguig, 1215 Metro Manila</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/notlike.rey/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/Not.likeRey/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://github.com/Daoang" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <input type="text" id="subject" placeholder="Subject" required>
+                    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Rey.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
